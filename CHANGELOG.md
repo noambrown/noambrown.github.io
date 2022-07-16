@@ -1,8 +1,6 @@
 ## Unreleased version
 
 - Added `post_search` config setting that creates a Search button in the navbar (older websites need to set `post_search: true` to enable this feature) (#770)
-- BREAKING CHANGE: More control over RSS feed sharing: previously, an RSS feed was *always* generated, and if the config setting `rss-description` was set then there was an RSS icon in the footer. Now, an RSS feed is only generated when the config setting `rss-description` exists, and an RSS footer icon is only shown if `rss: true` is set in the `social-network-links` config settings 
-- Fixed page titles, subtitles, and excerpts rendering correctly when there are special characeters in them (#856) 
 - Slightly reworked margins and position for avatar image to resolve an alignment issue on Safari.
 - Changed the width at which the navbar collapses to a higher threshold because most modern non-mobile browsers are >1000px
 - Fixed bug where navbar secondary level dropdown items didn't inherit the same colour as the primary navbar links
@@ -14,11 +12,11 @@
 - Updated staticman from using v2 (public servers) to v3 (private servers) due to the public servers becoming obsolete (#775)
 - Added support for Cloudflare Analytics (#797)
 - Added Reddit in share options of posts (#815)
-- Added support for giscus comments (#886)
+- Added support for giscus comments (#886) and CommentBox (#960)
 - Fixed bug where staticman didn't work jQuery slim version is used (#766)
 - Fixed very long strings to wrap around the next line rather than go off-screen (#787)
 - Added `footer-hover-col` config setting to customize the hover colour of links in the footer (#848)
-- Added social network link for Discord (#907)
+- Added social network links for Discord (#907), Kaggle (#961), and Hackerrank (#978)
 
 ## v5.0.0 (2020-09-15)
 
@@ -79,7 +77,7 @@ One of the major changes in this version is that a lot of time was spent on reth
 
 - Fixed staticman comments UI that was broken since the migration to bootstrap 4
 
-## v4.0.0 (2020-07-12)
+## v4.0.0 2020-07-12
 
 - **BREAKING CHANGE** Replace `image` YAML parameter with `thumbnail-img` to be more clear
 - **MAJOR BEHAVIOUR CHANGE** Don't use the thumbnail as the avatar image
@@ -87,42 +85,42 @@ One of the major changes in this version is that a lot of time was spent on reth
 - Image to share on social media will use the cover image or thumbnail if none is provided
 - All images (social media share, thumbnail, cover) can use either relative or absoluate paths.
 - Fixed issue where if a dropdown menu was the last item in the menu bar, it did not have a proper margin on the right
-- Added social network links: Mastodon (#646), Google Scholar, ORCID (#670)
-- Added support for sharing pages on new social network: VK (#657)
+- Add social network links: Mastodon (#646), Google Scholar, ORCID (#670)
+- Add support for sharing pages on new social network: VK (#657)
 - Use Open Graph type 'article' for blog posts (#669)
 - Use Twitter's large sumary card (large image) when there is a cover image, thumbnail image, or share image specified (#668)
-- Made post images in the feed page smaller on smaller devices
+- Make post images in the feed page smaller on smaller devices
 - Fixed jQuery version in staticman (#671)
 
-## v3.0.0 (2020-05-07)
+## v3.0.0 2020-05-07
 
 - **BREAKING CHANGE** Upgraded from Bootstrap 3.3.2 to 4.4.1. This involved a major rewrite of most components. This shouldn't affect any users unless you have custom HTML/CSS code which the new Bootstrap could have broken.
 - **BREAKING CHANGE** Renamed `bigimg` YAML parameter to `cover-img`
 - **BREAKING CHANGE** Removed `googlefonts` YAML parameter since googlefonts are just CSS so they can be loaded via `ext-css`
 - **BREAKING CHANGE** Upgraded from jQuery 1.11.2 to 3.4.2. This should not affect most people
 - Added `navbar-border-col` setting in the config file
-- Added accessibility features where possible
+- Add accessibility features where possible
 - Made the theme completely responsive by rewriting all CSS to use 'rem' instead of 'px'
-- Rewrote and simplified some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
-- Removed most of the sample posts so that users only have two sample posts to learn from
+- Rewrite and simplify some JavaScript code to use CSS or Bootstrap alternatives that weren't available in 2015
+- Remove most of the sample posts so that users only have two sample posts to learn from
 - Improvements to the README instructions
 
-## v2.3.0 (2020-04-29)
+## v2.3.0 2020-04-29
 
-- Added YAML parameter `footer-extra` for including custom content in the footer
-- Fixed issue: linking to a specific part of a page resulted in scrolling too far (#69)
-- Added YAML parameter `nav-short` to have navbar permanently collapsed
-- Added social network link: Calendly
-- Fixed bug where RSS link in footer was showing even when turned off
+- Add YAML option `footer-extra` for including custom content in the footer
+- Fix issue: linking to a specific part of a page resulted in scrolling too far (#69)
+- Add YAML option `nav-short` to have navbar permanently collapsed
+- Add social network link: Calendly
+- Fix bug where RSS link in footer was showing even when turned off
 
-## v2.2.0 (2020-04-27)
+## v2.2.0 2020-04-27
 
-- Added social network link: Telegram (#625) (thanks @mashed-potatoes)
+- Add social network link: Telegram (#625) (thanks @mashed-potatoes)
 - Moved the demo site to an independent URL: https://beautifuljekyll.com
 - Major documentation overhaul and cleanup of old files
-- Fixed a few bugs from the remote_theme migration
+- Fix a few bugs from the remote_theme migration
 
-## v2.0.0 (2020-04-26)
+## v2.0.0 2020-04-26
 
 - Beautiful-Jekyll v2.0.0 available as an official Ruby gem
 - Beautifull-Jekyll now supports the `remote_theme` config (#339) (thanks @gpotter2 and @skalee)
@@ -207,4 +205,3 @@ One of the major changes in this version is that a lot of time was spent on reth
 ... Many small changes because the site was in its infancy
 
 **2015-03-12** Beautiful Jekyll version 0.0000001 is released!
-
