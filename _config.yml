@@ -14,10 +14,8 @@ author: Noam Brown
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "about me"
-  Resources:
-    - CV: "downloads/CV.pdf"
-    - Publications: "https://scholar.google.com/citations?user=RLDbLcUAAAAJ"
+  CV: "downloads/CV.pdf"
+  Publications: "https://scholar.google.com/citations?user=RLDbLcUAAAAJ"
 
 # --- Logo --- #
 
