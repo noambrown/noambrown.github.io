@@ -42,7 +42,7 @@ social-network-links:
 #  github: daattali
   twitter: polynoamial
 #  patreon: DeanAttali
-  youtube: c/noambrown
+#  youtube: c/noambrown
 #  medium: yourname
 #  reddit: noambrown
 #  linkedin: daattali
@@ -59,7 +59,7 @@ social-network-links:
 #  calendly: yourname
 #  mastodon: instance.url/@username
 #  ORCID: your ORCID ID
-google-scholar: RLDbLcUAAAAJ
+  google-scholar: citations?user=6iUjvyMAAAAJ
 #  discord: invite/invite_code or users/userid 
 #  kaggle: yourname
 #  hackerrank: yourname
