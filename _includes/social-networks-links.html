@@ -1,6 +1,6 @@
 <ul class="list-inline text-center footer-links">
 
-{%- if site.social-network-links.rss -%}
+{%- if site.social-network-links.rss and site.rss-description -%}
   <li class="list-inline-item">
     <a href="{{ '/feed.xml' | relative_url }}" title="RSS">
       <span class="fa-stack fa-lg" aria-hidden="true">
@@ -275,7 +275,7 @@
     </a>
   </li>
 {%- endif -%}
-
+  
 {%- if site.social-network-links.medium -%}
   <li class="list-inline-item">
     <a href="https://medium.com/@{{ site.social-network-links.medium }}" title="Medium">
@@ -299,7 +299,7 @@
    </a>
   </li>
 {%- endif -%}
-
+  
 {%- if site.social-network-links.discord -%}
   <li class="list-inline-item">
     <a href="https://discord.com/{{ site.social-network-links.discord }}" title="Discord">
@@ -311,7 +311,7 @@
    </a>
   </li>
 {%- endif -%}
-
+  
 {%- if site.social-network-links.kaggle -%}
   <li class="list-inline-item">
     <a href="https://www.kaggle.com/{{ site.social-network-links.kaggle }}" title="Kaggle">

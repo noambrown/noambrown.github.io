@@ -6,6 +6,8 @@ var BeautifulJekyllJS = {
   numImgs : null,
 
   init : function() {
+    setTimeout(BeautifulJekyllJS.initNavbar, 10);
+
     // Shorten the navbar after scrolling a little bit down
     $(window).scroll(function() {
         if ($(".navbar").offset().top > 50) {
