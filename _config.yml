@@ -21,7 +21,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/profile1.jpg"
+avatar: "/assets/img/profile-poker.jpg"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
@@ -45,7 +45,7 @@ social-network-links:
 #  youtube: c/noambrown
 #  medium: yourname
 #  reddit: noambrown
-#  linkedin: daattali
+  linkedin: noam-brown-8b785b62
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
@@ -80,6 +80,9 @@ share-links-active:
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
 url-pretty: "noambrown.com"
+
+# Hide theme attribution in the footer
+remove-ads: true
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
 excerpt_length: 50
@@ -252,6 +255,7 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - vendor/
 
 plugins:
   - jekyll-paginate
@@ -259,4 +263,3 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
